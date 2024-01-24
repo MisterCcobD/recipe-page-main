@@ -28,6 +28,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
 }
 #recipeCard {
   margin: 0;
@@ -59,19 +60,16 @@ p {
 img {
   width: 100%;
 }
-#time{
-  width:100%
-}
 .time {
   margin: auto;
-  width: -webkit-fill-available;
+  width: 80%;
   background-color: var(--RoseWhite);
   border-radius: 16px;
   & h2 {
     font-family: Outfit;
     font-weight: 600;
     color: var(--DarkRaspberry);
-    font-size: 1.1rem;
+    margin-left: 1em;
   }
 }
 #description,
@@ -131,10 +129,8 @@ tr,td{
       .time{
         position: unset;
         padding: 2em;
-        width: -webkit-fill-available;
           & h2{
-            position: relative;
-            right: 1em;
+            margin-left: 2em;
             margin: 1dvh 0;
           }
       }
