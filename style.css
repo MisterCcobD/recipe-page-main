@@ -102,12 +102,6 @@ ul li::before {
 table, #table{
   width: -webkit-fill-available;
 }
-#table h2,
-p {
-  /* position: relative;
-  right: 1em; */
-  /* margin: 1dvh 0; */
-}
 table tr :nth-child(2) {
   color: var(--Nutmeg);
   font-weight: 600;
@@ -116,7 +110,7 @@ tr,td{
   border-bottom: 1px var(--LightGrey) solid;
   border-collapse: collapse;
 }
-@media (min-width:667px) or (orientation:landscape) {
+@media (min-width:667px) and (orientation:landscape) {
   #recipeCard{
     width: 50%;
     margin: 5% 0;
@@ -139,7 +133,9 @@ tr,td{
         padding: 2em;
         width: -webkit-fill-available;
           & h2{
-            right: auto;
+            position: relative;
+            right: 1em;
+            margin: 1dvh 0;
           }
       }
       li{
